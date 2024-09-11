@@ -67,7 +67,7 @@ const Navbar = () => {
             </span>
             <div className="">
               {openMobileMenu && (
-                <div className="flex w-screen flex-col mx-auto items-center justify-center md:hidden">
+                <div className="flex w-full flex-col mx-auto items-center justify-center md:hidden">
                   <Link href="/">
                     <h1 className="font-semibold w-full py-6 text-center text-xl hover:text-blue-600 hover:opacity-90">
                       Home
