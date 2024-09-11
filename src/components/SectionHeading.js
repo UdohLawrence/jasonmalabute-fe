@@ -1,0 +1,13 @@
+const SectionHeading = ({ title }) => {
+  return (
+    <header className="bg-white shadow dark:bg-gray-600">
+      <div className="max-w-6xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <h2 className="font-semibold text-4xl text-gray-800 dark:text-gray-100 leading-tight">
+          {title}
+        </h2>
+      </div>
+    </header>
+  );
+};
+
+export default SectionHeading;
