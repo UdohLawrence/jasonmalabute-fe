@@ -1,13 +1,12 @@
 import Card from "@/components/Card";
 import SectionHeading from "@/components/SectionHeading";
-import React from "react";
 
 const Contact = () => {
   return (
     <section className="max-w-6xl mx-auto">
       <SectionHeading title="Contact Us" />
       <Card>
-        <form className="max-w-md mx-auto">
+        <form>
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="text"
@@ -54,7 +53,6 @@ const Contact = () => {
               placeholder="Leave a comment..."
             ></textarea>
           </div>
-
           <div>
             <button
               type="submit"

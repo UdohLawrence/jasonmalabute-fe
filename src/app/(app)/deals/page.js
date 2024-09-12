@@ -1,7 +1,6 @@
 import Card from "@/components/Card";
 import SectionHeading from "@/components/SectionHeading";
 import { Carousel } from "flowbite-react";
-import React from "react";
 import Image from "next/image";
 
 const Deals = () => {

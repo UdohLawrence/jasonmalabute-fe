@@ -1,9 +1,8 @@
 import FooterComponent from "@/components/FooterComponent";
 import Navbar from "@/components/Navbar";
 
-
 const AppLayout = ({ children }) => {
-  
+
   return (
     <>
       <Navbar />

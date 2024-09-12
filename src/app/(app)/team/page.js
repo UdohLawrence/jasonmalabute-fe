@@ -1,6 +1,5 @@
 import Card from "@/components/Card";
 import SectionHeading from "@/components/SectionHeading";
-import React from "react";
 import Image from 'next/image'
 
 const Team = () => {
@@ -8,7 +7,7 @@ const Team = () => {
     <section className="max-w-6xl mx-auto">
       <SectionHeading title="Our Team" />
       <Card>
-        <div className="flex mx-auto flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full max-w-6xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div className="flex mx-auto flex-col items-center bg-white md:flex-row w-full max-w-6xl dark:border-gray-700 dark:bg-gray-800">
           <Image
             className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
             src={"/jason-profile.jpg"}
