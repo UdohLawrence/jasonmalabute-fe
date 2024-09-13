@@ -1,0 +1,23 @@
+"use client";
+
+import Card from "@/components/Card";
+import SectionHeading from "@/components/SectionHeading";
+import React from "react";
+import { InlineWidget } from "react-calendly";
+
+const Call = () => {
+  
+  return (
+    <>
+      <SectionHeading title="Schedule a Call" />
+      <Card>
+        <InlineWidget
+          url="https://calendly.com/jason-malabutecpa/30min"
+          styles={{ height: "650px" }}
+        />
+      </Card>
+    </>
+  );
+};
+
+export default Call;
