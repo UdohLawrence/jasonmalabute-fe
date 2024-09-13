@@ -59,9 +59,9 @@ const Navbar = () => {
             >
               {openMobileMenu ? <FaTimes /> : <GiHamburgerMenu />}
             </span>
-            <div className="">
+            <div onClick={() => setOpenMobileMenu(!openMobileMenu)}>
               {openMobileMenu && (
-                <div className="absolute flex flex-col top-20 left-0 w-full bg-white opacity-90 text-gray-800 text-center p-4 space-y-4">
+                <div className="absolute flex flex-col top-24 left-0 w-full bg-white text-gray-800 text-center p-4 space-y-4">
                   {layoutRoutes.map((layoutRoute, index) => (
                     <Link
                       href={layoutRoute.link}
