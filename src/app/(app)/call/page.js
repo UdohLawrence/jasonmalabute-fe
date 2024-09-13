@@ -13,7 +13,7 @@ const Call = () => {
       <Card>
         <InlineWidget
           url="https://calendly.com/jason-malabutecpa/30min"
-          styles={{ height: "650px" }}
+          styles={{ height: "700px" }}
         />
       </Card>
     </>
