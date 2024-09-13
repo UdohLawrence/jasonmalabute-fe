@@ -36,9 +36,7 @@ const Navbar = () => {
                 width={60}
                 height={60}
               />
-              <h1 className="inline text-2xl font-semibold">
-                Jason Malabute
-              </h1>
+              <h1 className="inline text-2xl font-semibold">Jason Malabute</h1>
             </Link>
           </div>
           {/*Mobile Menu*/}
@@ -63,12 +61,7 @@ const Navbar = () => {
             </span>
             <div className="">
               {openMobileMenu && (
-                <div className="flex w-full flex-col mx-auto items-center justify-center md:hidden">
-                  <Link href="/">
-                    <h1 className="font-semibold w-full py-6 text-center text-xl hover:text-blue-600 hover:opacity-90">
-                      Home
-                    </h1>
-                  </Link>
+                <div className="absolute flex flex-col top-20 left-0 w-full bg-white opacity-90 text-gray-800 text-center p-4 space-y-4">
                   {layoutRoutes.map((layoutRoute, index) => (
                     <Link
                       href={layoutRoute.link}
