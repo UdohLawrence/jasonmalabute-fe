@@ -1,6 +1,7 @@
 import FooterComponent from "@/components/FooterComponent";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import CalendlyEmbed from "@/components/CalendlyEmbed"
 import { Testimonials } from "@/components/Testimonials";
 import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
@@ -28,7 +29,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/call"
+              href="#call"
               className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 hover:text-gray-100"
             >
               Book a Call
@@ -48,6 +49,9 @@ export default function Home() {
         </div>
       </Link>
       <Services />
+      <div id="call">
+        <CalendlyEmbed />
+      </div>
       {/*<Testimonials />*/}
       <FooterComponent />
     </>
