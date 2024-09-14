@@ -1,4 +1,4 @@
-import FooterComponent from "@/components/FooterComponent";
+import TheFooter from "@/components/TheFooter";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import CalendlyEmbed from "@/components/CalendlyEmbed"
@@ -50,7 +50,7 @@ export default function Home() {
         <CalendlyEmbed />
       </div>
       {/*<Testimonials />*/}
-      <FooterComponent />
+      <TheFooter />
     </>
   );
 }

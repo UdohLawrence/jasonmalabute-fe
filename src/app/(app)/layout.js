@@ -1,4 +1,4 @@
-import FooterComponent from "@/components/FooterComponent";
+import TheFooter from "@/components/TheFooter";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
@@ -20,7 +20,7 @@ const AppLayout = ({ children }) => {
               </Tooltip>
           </Link>
 
-          <FooterComponent className="shrink-0"/>
+          <TheFooter className="shrink-0"/>
       </div>
   );
 };
