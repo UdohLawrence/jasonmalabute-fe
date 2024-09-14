@@ -3,7 +3,8 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
 import Link from 'next/link';
-import { IoChatbubbleOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
+import { Tooltip } from "flowbite-react";
 
 export default function Home() {
   return (
@@ -36,7 +37,13 @@ export default function Home() {
       </section>
       <Link href="mailto:jason@malabutecpa.com">
         <div className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
-          <IoChatbubbleOutline className="text-2xl text-white" />
+          <Tooltip
+            content="Get in touch jason@malabutecpa.com"
+            style="light"
+            trigger="hover"
+          >
+            <MdOutlineMail className="text-3xl text-white" />
+          </Tooltip>
         </div>
       </Link>
       <Services />
