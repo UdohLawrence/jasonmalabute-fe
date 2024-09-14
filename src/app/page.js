@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Link target="_blank" href="mailto:jason@malabutecpa.com" className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
+      <a target="_blank" href="mailto:jason@malabutecpa.com" className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
           <Tooltip
               content="Get in touch"
               style="light"
@@ -44,7 +44,7 @@ export default function Home() {
           >
               <MdOutlineMail className="text-3xl text-white" />
           </Tooltip>
-      </Link>
+      </a>
       <Services />
       <div id="call">
         <CalendlyEmbed />
