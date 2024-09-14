@@ -12,9 +12,13 @@ const Navbar = () => {
       name: "About",
       link: "/about",
     },
+    // {
+    //   name: "Sample Deals",
+    //   link: "/deals",
+    // },
     {
-      name: "Sample Deals",
-      link: "/deals",
+      name: "Services",
+      link: "/#services",
     },
     {
       name: "Contact Us",

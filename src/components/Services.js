@@ -30,7 +30,7 @@ const Services = () => {
     },
   ];
   return (
-    <>
+    <div id="services">
       <SectionHeading title="Our Services" />
       <Card>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 shadow max-w-6xl mx-auto gap-4 p-4 flex-wrap">
@@ -49,7 +49,7 @@ const Services = () => {
         ))}
         </div>
       </Card>
-    </>
+    </div>
   );
 };
 
