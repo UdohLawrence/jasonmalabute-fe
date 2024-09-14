@@ -6,23 +6,22 @@ import { Tooltip } from "flowbite-react";
 
 const AppLayout = ({ children }) => {
   return (
-    <>
-      <Navbar />
-      <main className="w-full min-h-screen mt-3">{children}</main>
-      <Link href="mailto:jason@malabutecpa.com">
-        <div className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
-          <Tooltip
-            content="Get in touch jason@malabutecpa.com"
-            style="light"
-            trigger="hover"
-          >
-            <MdOutlineMail className="text-3xl text-white" />
-          </Tooltip>
-        </div>
-      </Link>
+      <div className="min-h-screen flex flex-col">
+          <Navbar className="shrink-0"/>
+          <main className="flex-1 w-full mt-12">{children}</main>
+          <Link target="_blank" href="mailto:jason@malabutecpa.com"
+                className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
+              <Tooltip
+                  content="Get in touch"
+                  style="light"
+                  trigger="hover"
+              >
+                  <MdOutlineMail className="text-3xl text-white"/>
+              </Tooltip>
+          </Link>
 
-      <FooterComponent />
-    </>
+          <FooterComponent className="shrink-0"/>
+      </div>
   );
 };
 

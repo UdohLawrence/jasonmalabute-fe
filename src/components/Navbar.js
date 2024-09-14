@@ -9,8 +9,8 @@ import { useState } from "react";
 const Navbar = () => {
   const layoutRoutes = [
     {
-      name: "Our Team",
-      link: "/team",
+      name: "About",
+      link: "/about",
     },
     {
       name: "Sample Deals",
@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className="bg-white sticky top-0 z-10 dark:bg-gray-500 shadow-lg dark:shadow-2xl text-gray-800 dark:text-white">
         <div className="flex justify-between max-w-6xl mx-auto py-6 px-4 sm:px-6 items-center">
           <div className="flex justify-start items-center">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="cursor-pointer flex items-center gap-3">
               <Image
                 src={"/malabute-logo.png"}
                 alt="Site Logo"

@@ -2,7 +2,7 @@ import FooterComponent from "@/components/FooterComponent";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import CalendlyEmbed from "@/components/CalendlyEmbed"
-import { Testimonials } from "@/components/Testimonials";
+// import { Testimonials } from "@/components/Testimonials";
 import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
 import { Tooltip } from "flowbite-react";
@@ -22,14 +22,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <Link
-              href="/about-me"
+              href="/about"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-blue-200 hover:text-gray-700"
             >
               Learn more
             </Link>
-
             <Link
-              href="#call"
+              href="/#call"
               className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 hover:text-gray-100"
             >
               Book a Call
@@ -37,16 +36,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Link href="mailto:jason@malabutecpa.com">
-        <div className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
+      <Link target="_blank" href="mailto:jason@malabutecpa.com" className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2">
           <Tooltip
-            content="Get in touch jason@malabutecpa.com"
-            style="light"
-            trigger="hover"
+              content="Get in touch"
+              style="light"
+              trigger="hover"
           >
-            <MdOutlineMail className="text-3xl text-white" />
+              <MdOutlineMail className="text-3xl text-white" />
           </Tooltip>
-        </div>
       </Link>
       <Services />
       <div id="call">
