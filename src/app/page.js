@@ -2,7 +2,7 @@ import FooterComponent from "@/components/FooterComponent";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
-import Link from 'next/link';
+import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
 import { Tooltip } from "flowbite-react";
 
@@ -21,16 +21,17 @@ export default function Home() {
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <Link
-              href="/call"
-              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            >
-              Book a Call
-            </Link>
-            <Link
-              href="#"
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+              href="/about-me"
+              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-blue-200 hover:text-gray-700"
             >
               Learn more
+            </Link>
+
+            <Link
+              href="/call"
+              className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 hover:text-gray-100"
+            >
+              Book a Call
             </Link>
           </div>
         </div>
