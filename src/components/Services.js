@@ -72,11 +72,8 @@ const Services = () => {
       >
         <div className="inset-0 backdrop-blur-md rounded-lg bg-black/30 max-w-6xl w-full mx-auto my-3 py-3 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {servicesList.map((service, index) => (
-            <Accordion open={expandedCard === index}>
-              <Card
-                key={index}
-                className="mt-6 max-w-sm mx-auto p-3 rounded-md"
-              >
+            <Accordion open={expandedCard === index} key={index}>
+              <Card className="mt-6 max-w-sm mx-auto p-3 rounded-md">
                 <CardHeader
                   color="blue-gray"
                   className="relative h-56 rounded-lg"
