@@ -38,7 +38,7 @@ export default function Home() {
       <a
         target="_blank"
         href="mailto:jason@malabutecpa.com"
-        className="bg-blue-400 rounded-full p-6 fixed bottom-3 right-2"
+        className="bg-blue-400 rounded-full p-6 fixed z-10 bottom-3 right-2"
       >
         <Tooltip content="Get in touch" style="light" trigger="hover">
           <MdOutlineMail className="text-3xl text-white" />

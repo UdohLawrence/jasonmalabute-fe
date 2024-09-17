@@ -70,34 +70,44 @@ const Services = () => {
         id="services"
         className="shadow-md bg-cover bg-center bg-no-repeat pb-3 bg-white bg-blend-multiply"
       >
-        <div className="rounded-lg max-w-6xl w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6">
-          {servicesList.map((service, index) => (
-            <Accordion open={expandedCard === index} key={index}>
-              <Card className="mt-6 max-w-sm mx-auto rounded-md">
-                <CardHeader
-                  color="blue-gray"
-                  className="relative mx-0 h-56 rounded-lg bg-clip-border overflow-hidden text-white shadow-lg"
-                >
-                  {expandedCard === index ? (
-                    <AccordionBody onClick={() => toggleAccordion(index)}>
-                      <Typography className="text-sm text-justify px-3">
-                        {service.description}
+        <div className="rounded-lg max-w-6xl w-full mx-auto ">
+          <div
+            id="cards"
+            className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3 sm:px-0"
+          >
+            {servicesList.map((service, index) => (
+              <Accordion open={expandedCard === index} key={index}>
+                <Card className="mt-6 max-w-sm mx-auto rounded-md">
+                  <CardHeader
+                    color="blue-gray"
+                    className="relative mx-0 h-56 rounded-lg bg-clip-border overflow-hidden text-white shadow-lg"
+                  >
+                    {expandedCard === index ? (
+                      <AccordionBody onClick={() => toggleAccordion(index)}>
+                        <Typography className="text-sm text-justify px-3">
+                          {service.description}
+                        </Typography>
+                      </AccordionBody>
+                    ) : (
+                      <Image
+                        src={service.imageUrl}
+                        fill
+                        alt={service.alt}
+                        className="w-full object-cover oject-center"
+                      />
+                    )}
+                  </CardHeader>
+                  <CardBody className="p-3">
+                    <AccordionHeader onClick={() => toggleAccordion(index)}>
+                      <Typography variant="h5" color="blue-gray">
+                        {service.title}
                       </Typography>
-                    </AccordionBody>
-                  ) : (
-                    <Image src={service.imageUrl} fill alt={service.alt} className="w-full object-cover oject-center" />
-                  )}
-                </CardHeader>
-                <CardBody className="p-3">
-                  <AccordionHeader onClick={() => toggleAccordion(index)}>
-                    <Typography variant="h5" color="blue-gray">
-                      {service.title}
-                    </Typography>
-                  </AccordionHeader>
-                </CardBody>
-              </Card>
-            </Accordion>
-          ))}
+                    </AccordionHeader>
+                  </CardBody>
+                </Card>
+              </Accordion>
+            ))}
+          </div>
         </div>
       </section>
     </>
