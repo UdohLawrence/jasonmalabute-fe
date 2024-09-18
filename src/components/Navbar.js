@@ -21,9 +21,13 @@ const Navbar = () => {
       link: "/#services",
     },
     {
-      name: "Contact Us",
+      name: "Contact",
       link: "/contact",
     },
+    {
+      name: "Book a Call",
+      link: "/#calendly"
+    }
   ];
 
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -45,12 +49,16 @@ const Navbar = () => {
           </div>
           {/*Mobile Menu*/}
           <div className="flex flex-col md:flex-row items-center justify-between gap-3">
-            <div className="hidden md:flex gap-8">
+            <div className="hidden md:flex items-center gap-8">
               {layoutRoutes.map((layoutRoute, index) => (
                 <Link
                   href={layoutRoute.link}
                   key={index}
-                  className="font-semibold text-md hover:text-blue-600"
+                  className={`font-semibold text-center text-md hover:text-blue-600 ${
+                    layoutRoute.name === "Book a Call"
+                      ? "bg-blue-500 text-white py-2 px-3 hover:b-blue-400 hover:text-gray-200 rounded-lg"
+                      : ""
+                  }`}
                 >
                   {layoutRoute.name}
                 </Link>
@@ -70,7 +78,11 @@ const Navbar = () => {
                     <Link
                       href={layoutRoute.link}
                       key={index}
-                      className="font-semibold w-full py-6 text-center text-xl hover:text-blue-600 hover:opacity-90"
+                      className={`font-semibold w-full py-3 text-center text-xl hover:text-blue-600 hover:opacity-90 ${
+                        layoutRoute.name === "Book a Call"
+                          ? "bg-blue-500 text-white hover:b-blue-400 hover:text-gray-200 rounded-lg"
+                          : ""
+                      }`}
                     >
                       {layoutRoute.name}
                     </Link>

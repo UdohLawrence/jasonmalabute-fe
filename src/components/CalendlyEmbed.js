@@ -7,7 +7,7 @@ import { InlineWidget } from "react-calendly";
 
 const Call = () => {
   return (
-    <>
+    <div id="calendly">
       <SectionHeading title="Schedule a Call" />
       <Card>
         <InlineWidget
@@ -15,7 +15,7 @@ const Call = () => {
           styles={{ height: "700px" }}
         />
       </Card>
-    </>
+    </div>
   );
 };
 
