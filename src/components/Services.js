@@ -1,31 +1,37 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-  Card,
-  CardBody,
-  CardHeader,
-  Typography,
-} from "@material-tailwind/react";
 
 const Services = () => {
-  const [expandedCard, setExpandedCard] = useState(null);
-
-  const toggleAccordion = (value) => {
-    setExpandedCard(expandedCard === value ? null : value);
-  };
   const servicesList = [
+    {
+      title: "Advisory",
+      description:
+        "Get expert advice on structuring and growing your real estate investments for success. We help you make informed decisions and optimize your real estate investment portfolio.",
+      imageUrl: "/advisory-icon-wwd.svg",
+      alt: "Advisory",
+    },
     {
       title: "Accounting",
       description:
         "Good accounting and bookkeeping are crucial for real estate investors and passive investors to accurately track the financial performance of their properties. Our specialized accounting services provide detailed financial reports and cash flow monitoring, helping you make informed decisions while saving valuable time.",
-      imageUrl: "/accounting.jpg",
+      imageUrl: "/accounting-icon-wwd.svg",
       alt: "Accounting",
+    },
+    {
+      title: "Tax Preparation",
+      description:
+        "Ensure your tax documents are prepared and distributed on time, whether it’s for your individual tax needs or meeting the demands of your passive investors. Our timely and accurate tax preparation services are designed to keep you compliant and stress-free.",
+      imageUrl: "/tax-icon-wwd.svg",
+      alt: "Tax Preparation",
+    },
+    {
+      title: "Tax Smart Investors",
+      description:
+        "Receive professional tax advice from our real estate experts at a fraction of the cost of one on one advisory services.",
+      imageUrl: "/tax-smart-wwd.svg",
+      alt: "Tax Smart Investors",
     },
     {
       title: "Tax Planning",
@@ -34,13 +40,7 @@ const Services = () => {
       imageUrl: "/planning.jpg",
       alt: "Tax Planning",
     },
-    {
-      title: "Tax Preparation",
-      description:
-        "Ensure your tax documents are prepared and distributed on time, whether it’s for your individual tax needs or meeting the demands of your passive investors. Our timely and accurate tax preparation services are designed to keep you compliant and stress-free.",
-      imageUrl: "/preparation.jpg",
-      alt: "Tax Preparation",
-    },
+
     {
       title: "Payroll Services",
       description:
@@ -48,64 +48,45 @@ const Services = () => {
       imageUrl: "/payroll.jpg",
       alt: "Payroll Services",
     },
-    {
-      title: "Advisory",
-      description:
-        "Get expert advice on structuring and growing your real estate investments for success. We help you make informed decisions and optimize your real estate investment portfolio.",
-      imageUrl: "/advisory.jpg",
-      alt: "Advisory",
-    },
-    {
-      title: "Tax Smart Investors",
-      description:
-        "Receive professional tax advice from our real estate experts at a fraction of the cost of one on one advisory services.",
-      imageUrl: "/investors.jpg",
-      alt: "Tax Smart Investors",
-    },
   ];
   return (
     <>
       <SectionHeading title="Our Services" />
       <section
         id="services"
-        className="shadow-md bg-cover bg-center bg-no-repeat pb-3 bg-white bg-blend-multiply"
+        className="shadow-md bg-cover bg-center bg-no-repeat pb-3 bg-gray-100 bg-blend-multiply"
       >
         <div className="rounded-lg max-w-6xl w-full mx-auto ">
+          <h3 className="max-w-3xl text-left sm:text-center mx-auto text-4xl mb-3 text-blue-500 px-3">
+            Personalized services backed by real estate expertise
+          </h3>
+          <p className="max-w-3xl text-center mx-auto text-base mb-3 px-3">
+            Our team works with you to develop proactive tax plans that rduce
+            your taxes and provide back office support to help yo grow.
+          </p>
           <div
             id="cards"
-            className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-3 sm:px-0"
+            className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4"
           >
             {servicesList.map((service, index) => (
-              <Accordion open={expandedCard === index} key={index}>
-                <Card className="mt-6 max-w-sm mx-auto rounded-md">
-                  <CardHeader
-                    color="blue-gray"
-                    className="relative mx-0 h-56 rounded-lg bg-clip-border overflow-hidden text-white shadow-lg"
-                  >
-                    {expandedCard === index ? (
-                      <AccordionBody onClick={() => toggleAccordion(index)}>
-                        <Typography className="text-sm text-justify px-3">
-                          {service.description}
-                        </Typography>
-                      </AccordionBody>
-                    ) : (
-                      <Image
-                        src={service.imageUrl}
-                        fill
-                        alt={service.alt}
-                        className="w-full object-cover oject-center"
-                      />
-                    )}
-                  </CardHeader>
-                  <CardBody className="p-3">
-                    <AccordionHeader onClick={() => toggleAccordion(index)}>
-                      <Typography variant="h5" color="blue-gray">
-                        {service.title}
-                      </Typography>
-                    </AccordionHeader>
-                  </CardBody>
-                </Card>
-              </Accordion>
+              <div
+                key={index}
+                className="max-w-sm p-6 bg-gray-200 border border-gray-200 rounded-lg shadow"
+              >
+                <img
+                  className="w-20 h-20 text-gray-800 mb-3"
+                  src={service.imageUrl}
+                  alt={service.alt}
+                />
+
+                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                  {service.title}
+                </h5>
+
+                <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
+                  {service.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>

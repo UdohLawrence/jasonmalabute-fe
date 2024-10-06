@@ -49,7 +49,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <SectionHeading title="Testimonials" />
+      <SectionHeading title="Testimonials" className="bg-gray-100"/>
 
       <div className="relative w-full max-w-6xl mx-auto h-full p-4 bg-gray-200">
         <div className="overflow-hidden relative px-3">
