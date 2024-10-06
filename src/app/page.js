@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Navbar />
       {/*Hero section*/}
-      <section className="bg-cover bg-[url('/hero-image.jpg')] bg-no-repeat bg-gray-700 bg-blend-multiply">
+      <section className="bg-cover bg-[url('/hero.jpg')] bg-top bg-no-repeat bg-gray-500 bg-blend-multiply">
         <div className="px-4 max-w-6xl mx-auto text-center py-24 lg:py-56">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Multi-Family Real Estate Investor
