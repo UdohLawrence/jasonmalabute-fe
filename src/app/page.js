@@ -1,6 +1,7 @@
 import TheFooter from "@/components/TheFooter";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import Link from "next/link";
 import { MdOutlineMail } from "react-icons/md";
@@ -49,7 +50,7 @@ export default function Home() {
       <div id="call">
         <CalendlyEmbed />
       </div>
-      {/*<Testimonials />*/}
+      <Testimonials />
       <TheFooter />
     </>
   );
