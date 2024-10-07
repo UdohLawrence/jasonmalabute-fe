@@ -15,3 +15,23 @@
     scrollbar-width: none;
   }
 }
+th, td{
+  @apply border border-gray-200;
+}
+tbody th{
+  @apply px-2 bg-white;
+}
+@layer components{
+  .bg-bronze{
+    background-image: radial-gradient(white, #CD7F32);
+  }
+  .bg-copper {
+    background-image: radial-gradient(white, #B87333);
+  }
+  .bg-gold {
+    background-image: radial-gradient(white, #FFD700);
+  }
+  .bg-silver {
+    background-image: radial-gradient(white, #C0C0C0);
+  }
+}

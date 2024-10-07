@@ -33,41 +33,22 @@ const Services = () => {
       imageUrl: "/tax-smart-wwd.svg",
       alt: "Tax Smart Investors",
     },
-    {
-      title: "Tax Planning",
-      description:
-        "We stay in regular contact with you throughout the year to plan and maximize your tax savings. Our focus is on high-net-worth individuals and high-income earners involved in real estate, ensuring you get the best strategies for your financial success.",
-      imageUrl: "/planning.jpg",
-      alt: "Tax Planning",
-    },
-
-    {
-      title: "Payroll Services",
-      description:
-        "Manage payroll efficiently and stay compliant with state and federal payroll tax laws.",
-      imageUrl: "/payroll.jpg",
-      alt: "Payroll Services",
-    },
   ];
   return (
     <>
-      <SectionHeading title="Our Services" />
       <section
         id="services"
         className="shadow-md bg-cover bg-center bg-no-repeat pb-3 bg-gray-100 bg-blend-multiply"
       >
-        <div className="rounded-lg max-w-6xl w-full mx-auto ">
-          <h3 className="max-w-3xl text-left sm:text-center mx-auto text-4xl mb-3 text-blue-500 px-3">
+        <div className="rounded-lg max-w-6xl w-full mx-auto pt-5">
+          <h3 className="max-w-3xl text-left text-4xl mb-3 text-blue-500 font-semibold px-3">
             Personalized services backed by real estate expertise
           </h3>
-          <p className="max-w-3xl text-center mx-auto text-base mb-3 px-3">
-            Our team works with you to develop proactive tax plans that rduce
-            your taxes and provide back office support to help yo grow.
+          <p className="max-w-3xl text-center text-gray-600 mx-auto text-base mb-3 px-3">
+            Our team works with you to develop proactive tax plans that reduce
+            your taxes and provide back office support to help you grow.
           </p>
-          <div
-            id="cards"
-            className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4"
-          >
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
             {servicesList.map((service, index) => (
               <div
                 key={index}

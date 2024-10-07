@@ -26,7 +26,7 @@ const Navbar = () => {
     },
     {
       name: "Book a Call",
-      link: "/#calendly"
+      link: "/call"
     }
   ];
 
