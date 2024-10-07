@@ -28,7 +28,7 @@ const Pricing = () => {
           <tbody>
             <tr className="">
               <th scope="row" className="font-medium text-gray-900 text-center">
-                Close Speed (How soon you'll get financial statements after
+                Close Speed (How soon you will get financial statements after
                 period ends)
               </th>
               <td className="">
