@@ -8,7 +8,7 @@ const Pricing = () => {
       <SectionHeading title="Pricing" />
 
       <div className="w-full p-3 bg-gray-100">
-        <h3 className="text-white max-w-5xl mx-auto font-semibold text-xl text-center bg-blue-500">
+        <h3 className="text-white max-w-5xl mx-auto py-3 font-semibold text-xl text-center bg-blue-500">
           PACKAGES
         </h3>
       </div>
@@ -1863,7 +1863,7 @@ const Pricing = () => {
         </table>
       </div>
       <div className="flex flex-col max-w-3xl mx-auto p-4">
-        <h3 className="text-blue-500 text-5xl text-center my-4">
+        <h3 className="text-blue-500 text-5xl text-center my-5">
           Ready to give your Real Estate Investment game a boost?
         </h3>
         <Link

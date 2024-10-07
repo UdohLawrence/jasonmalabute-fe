@@ -49,7 +49,7 @@ export default function Home() {
       <Services />
       <Pricing />
 
-      <Testimonials />
+      {/* <Testimonials /> */}
       <TheFooter />
     </>
   );
